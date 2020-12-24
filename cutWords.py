@@ -46,5 +46,5 @@ for i in dirList:
         toFile = open(sLAfter + '\\' + j, mode='w', encoding='utf-8')
         toFile.write(' '.join(result))
         toFile.close()
-        print('saveto: ' + sLAfter + '\\' + j)
+        print('saveTo: ' + sLAfter + '\\' + j)
         file.close()
