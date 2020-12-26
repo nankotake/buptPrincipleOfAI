@@ -58,6 +58,8 @@ if __name__ == '__main__':
     dirList = []
     dirContent = []
     outPath = r'C:\Users\wangj\Downloads\tf_idf'
+    if not os.path.exists(outPath):
+        os.makedirs(outPath)
     # 获取子文件夹名称、文件数量
     for filename in os.listdir(r'C:\Users\wangj\Downloads\after'):
         dirList.append(filename)
