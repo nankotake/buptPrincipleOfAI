@@ -15,6 +15,7 @@ def loadDataSet(dir, dirNum):
         tempFile = open(name, encoding='utf-8', mode='r')
         tempLine = tempFile.read()  # 获取内容
         resultList.append(tempLine.split(' '))  # 把拆分过的列表放入resultList
+        tempFile.close()
         print('get content ', tempI, ': ', name)
         tempI += 1
         if tempI >= dirNum / 2:
