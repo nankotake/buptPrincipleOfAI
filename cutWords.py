@@ -7,6 +7,7 @@ stopFile = open(stopName,mode='r',encoding='utf-8')
 stopList = []
 for i in stopFile.read():
     stopList.append(i)
+stopFile.close()
 # 保存数据所在的文件夹、文件名
 dirList = []
 dirContent = []
