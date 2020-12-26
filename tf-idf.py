@@ -29,7 +29,7 @@ def select(listWords):
         for i in l:
             doc_feq[i] += 1
     # 缩小范围，控制在前400个关键词
-    doc_feq = dict(sorted(doc_feq.items(), key=operator.itemgetter(1), reverse=True)[0:400])
+    doc_feq = dict(sorted(doc_feq.items(), key=operator.itemgetter(1), reverse=True)[0:500])
     # 获取TF值————tf = ni,j / sum for k(nk,j)
     word_tf = {}
     for i in doc_feq:
